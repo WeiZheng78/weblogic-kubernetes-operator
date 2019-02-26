@@ -113,7 +113,7 @@ public class ITOperator extends BaseTest {
       logger.info("Execution of statedump.sh failed, " + result.stderr() + "\n" + result.stdout());
 
     if (JENKINS) {
-    //  cleanup();
+      //  cleanup();
     }
 
     if (getLeaseId() != "") {
@@ -178,7 +178,7 @@ public class ITOperator extends BaseTest {
    */
   @Test
   public void testDomainOnPVUsingWDT() throws Exception {
-    //Assume.assumeFalse(QUICKTEST);
+    // Assume.assumeFalse(QUICKTEST);
     String testMethodName = new Object() {}.getClass().getEnclosingMethod().getName();
     logTestBegin(testMethodName);
     logger.info("Creating Domain using DomainOnPVUsingWDT & verifing the domain creation");
@@ -198,11 +198,11 @@ public class ITOperator extends BaseTest {
       // domain.verifyAdminConsoleViaLB();
       testCompletedSuccessfully = true;
     } finally {
-      //if (domain != null && (JENKINS || testCompletedSuccessfully)) {
+      // if (domain != null && (JENKINS || testCompletedSuccessfully)) {
       //  logger.info("About to delete domain: " + domain.getDomainUid());
       //  TestUtils.deleteWeblogicDomainResources(domain.getDomainUid());
       //  TestUtils.verifyAfterDeletion(domain);
-      //}
+      // }
     }
 
     logger.info("SUCCESS - " + testMethodName);
