@@ -132,7 +132,11 @@ public class PodHelper {
     }
 
     private String getInternalOperatorCertFile(TuningParameters tuningParameters) {
-      return tuningParameters.get(INTERNAL_OPERATOR_CERT_FILE);
+      String internalOperatorCert = tuningParameters.get(INTERNAL_OPERATOR_CERT_FILE);
+      System.out.println(
+          "PodHelper.AdminPodStepContext getInternalOperatorCertFile internalOperatorCert: "
+              + internalOperatorCert);
+      return internalOperatorCert;
     }
   }
 

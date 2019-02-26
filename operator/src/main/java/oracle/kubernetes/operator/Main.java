@@ -197,6 +197,9 @@ public class Main {
 
     LOGGER.info(MessageKeys.OP_CONFIG_NAMESPACE, operatorNamespace);
 
+    String internalOperatorCert = tuningAndConfig.get("internalOperatorCert");
+    System.out.println("Main.begin internalOperatorCert: " + internalOperatorCert);
+
     Collection<String> targetNamespaces = getTargetNamespaces();
     StringBuilder tns = new StringBuilder();
     Iterator<String> it = targetNamespaces.iterator();
