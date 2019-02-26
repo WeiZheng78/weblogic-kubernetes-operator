@@ -202,7 +202,7 @@ public class ITOperator extends BaseTest {
       //  logger.info("About to delete domain: " + domain.getDomainUid());
       //  TestUtils.deleteWeblogicDomainResources(domain.getDomainUid());
       //  TestUtils.verifyAfterDeletion(domain);
-      }
+      //}
     }
 
     logger.info("SUCCESS - " + testMethodName);
