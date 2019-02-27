@@ -200,6 +200,9 @@ public class Main {
     String internalOperatorCert = tuningAndConfig.get("internalOperatorCert");
     System.out.println("Main.begin internalOperatorCert: " + internalOperatorCert);
 
+    Set<Map.Entry<String, String>> entries = tuningAndConfig.entrySet();
+    System.out.println("Main.begin entries: " + entries);
+
     Collection<String> targetNamespaces = getTargetNamespaces();
     StringBuilder tns = new StringBuilder();
     Iterator<String> it = targetNamespaces.iterator();

@@ -38,6 +38,11 @@ public class ConfigMapConsumer implements Map<String, String> {
     this.threadPool = executorService;
     this.mountPointDir = new File(mountPoint);
     this.onUpdate = onUpdate;
+    System.out.println(
+        "ConfigMapConsumer.ctor mountPointDir: "
+            + mountPointDir
+            + ", mountPointDir.exists: "
+            + mountPointDir.exists());
     if (mountPointDir.exists()) {
       schedule();
     }
