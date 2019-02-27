@@ -201,7 +201,11 @@ public class Main {
     System.out.println("Main.begin internalOperatorCert: " + internalOperatorCert);
 
     Set<Map.Entry<String, String>> entries = tuningAndConfig.entrySet();
-    System.out.println("Main.begin entries: " + entries);
+    System.out.println("Main.begin ===========================");
+    for (Map.Entry<String, String> entry : entries) {
+      System.out.println("Main.begin key: " + entry.getKey() + ", value: " + entry.getValue());
+    }
+    System.out.println("Main.begin ===========================");
 
     Collection<String> targetNamespaces = getTargetNamespaces();
     StringBuilder tns = new StringBuilder();
